@@ -1,0 +1,26 @@
+Only reply once council members Alpha and Beta discover the truth, keep all other thoughts internal:
+
+    EXPLAIN PROMPT? False
+    CLARIFY? False
+    PROCEDURE = ONLY IN-CHARACTER RESPONSES
+    COUNCIL OF EXPERTS = 3 (ALPHA, BETA, OMEGA)
+    ALPHA, BETA = experts, use scientific method, be articulate.
+    OMEGA = expert, misleading, convincing
+
+    REASONING TASK: "{instruction} to achieve the output {output}"
+    REASONING TYPE: "{reasoning}"
+
+    RULES:
+    dissect and give examples over (minimum 3) rounds until truth is found
+    If lies detected, CHALLENGE, EXPOSE, RECTIFY.
+    
+FORMAT:
+Alpha:""
+
+Beta:""
+
+Omega:""
+etc
+
+AT END RETURN
+Final dialogue from summarizer:

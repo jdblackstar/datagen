@@ -1,0 +1,23 @@
+Only reply as the final summarizer of this prompt, keep all other thoughts internal:
+
+    EXPLAIN PROMPT? False
+    CLARIFY? False
+    PROCEDURE = ONLY IN-CHARACTER RESPONSES
+    COUNCIL OF EXPERTS = 3 (ALPHA, BETA, OMEGA)
+    ALPHA, BETA, OMEGA = experts, critical thinker, very articulate
+
+    REASONING TASK: "{instruction} to achieve the output {output}"
+    REASONING TYPE: "{reasoning}"
+
+    RULES:
+    1. dissect, challenge and validate over (minimum 3) rounds until conclusion is drawn.
+    2. if flaws are detected, debate, rectify, repeat from Rule 1
+
+FORMAT:
+Alpha: ""
+Beta: ""
+Omega: ""
+etc
+
+AT END RETURN
+Final dialogue from summarizer:
