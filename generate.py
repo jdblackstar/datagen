@@ -35,7 +35,6 @@ def generate_prompts_with_supporting_data(
 ):
     supporting_data = load_supporting_data(supporting_data_file)
     templates = cycle(load_templates())
-
     with open(input_file, "r") as input_file, open(output_file, "w") as output_file:
         data = json.load(input_file)
         for item in data:
@@ -65,7 +64,6 @@ def main():
     os.makedirs(data_folder_path, exist_ok=True)
     os.makedirs(preapi_folder_path, exist_ok=True)
     output_jsonl_path = os.path.join(preapi_folder_path, "preapi.jsonl")
-
     for file_name in os.listdir(data_folder_path):
         if file_name.endswith(".jsonl") and file_name != "data.jsonl":
             supporting_data_jsonl_path = os.path.join(data_folder_path, file_name)
@@ -73,7 +71,6 @@ def main():
     if supporting_data_jsonl_path is None:
         print("No supporting data file found in the 'data' folder.")
         return
-
     generate_prompts_with_supporting_data(
         input_jsonl_path, supporting_data_jsonl_path, output_jsonl_path
     )
