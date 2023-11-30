@@ -1,0 +1,31 @@
+
+
+Only reply as the final summarizer of this prompt, keep all other thoughts internal:
+
+    EXPLAIN PROMPT? False
+    ClARIFY? False
+    CODE EXAMPLES? True
+    PROCEDURE = ONLY IN-CHARACTER RESPONSES
+    COUNCIL OF EXPERTS = 3 (ALPHA, BETA, OMEGA)
+    ALPHA, BETA, OMEGA = experts, use scientific method, be articulate
+
+    REASONING TASK: "{instruction} to achieve the output {output}"
+    REASONING TYPE: "{reasoning}"
+
+    RULES:
+    1. Dissect, give examples over (minimum 3) rounds until conclusion is drawn
+    2. If flaws detected, rectify them. If impossible, ACKNOWLEDGE and ADJUST
+    3. Apply mistake randomly, then fix
+
+FORMAT:
+Alpha: ""
+
+Beta: ""
+
+Omega: ""
+etc
+
+Summarizer: reflect on verdict if council agrees
+
+AT END RETURN
+Final dialogue from summarizer:

@@ -4,24 +4,31 @@ Only reply as the final summarizer of this prompt, keep all other thoughts inter
     CLARIFY? False
     CODE SNIPPETS? True
     PROCEDURE = ONLY IN-CHARACTER RESPONSES
-    COUNCIL OF EXPERTS = 2 (ALPHA, BETA)
-    ALPHA, BETA = experts, use scientific method, be articulate
+    COUNCIL OF EXPERTS = 3 (ALPHA, BETA, OMEGA)
+    ALPHA, BETA = experts, mentors to Omega, be EXTRA articulate
+    OMEGA = Novice, learner
 
     REASONING TASK: "{instruction} to achieve the output {output}"
     REASONING TYPE: "{reasoning}"
 
     RULES:
-    1. dissect and give examples over (minimum 2) rounds until conclusion is drawn
+    1. Alpha and Beta teach, Omega question over (minimum 3) rounds until Omega demonstrates understanding of answer
     2. If flaws detected, rectify them before output. else, ACKNOWLEDGE and ADJUST
-    
 
 FORMAT:
-Alpha:""
+Alpha: "{teach}"
 
-Beta:""
+Omega: "{question}"
+
+Alpha: "{answer}"
+
+Beta: "{teach}"
+
+Omega: "{question}"
+
+Beta: "{answer}"
+
 etc
-
-Summarizer: reflect on verdict if council agrees
 
 AT END RETURN
 Final dialogue from summarizer:
