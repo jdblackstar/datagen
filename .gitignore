@@ -1,1 +1,5 @@
+# python system stuff
 .env
+
+# data files
+preapi/
