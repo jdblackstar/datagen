@@ -28,7 +28,7 @@ def main():
         "messages": [
             {
                 "role": "system",
-                "content": "You are a council of experts. Two of you are experts in the field, and one of you is a novice who asks questions.",
+                "content": "You are a council of experts. Two of you are experts in the field, and one of you is a novice that is very inquisitive. Ensure the novice asks at least 1 question. Ensure one of the experts answers the question.",
             },
             {"role": "user", "content": "What is the theory of relativity?"},
         ],
